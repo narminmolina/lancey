@@ -1,0 +1,48 @@
+@import url('./libs/reset.css');
+
+:root {
+	--main: #101828;
+	--gary: #344054;
+	--purple: #7f56d9;
+
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: #f2f4f7;
+	background-color: var(--main);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+	color: var(--purple);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.container {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.home-page {
+	display: flex;
+	padding: 0px;
+}

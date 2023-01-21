@@ -1,0 +1,50 @@
+.space-alert-box {
+	display: flex;
+	gap: 16px;
+	flex-direction: column;
+	padding: 20px 16px;
+	background-color: var(--gary);
+	border-radius: 8px;
+}
+
+.space-alert-box p {
+	margin: 0px;
+	color: #eaecf0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.space-alert-box p strong {
+	display: block;
+	margin-bottom: 5px;
+	color: #ffffff;
+	font-weight: 500;
+}
+
+.button-container {
+	display: flex;
+	gap: 12px;
+}
+
+.button-container button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: #eaecf0;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.button-container button:last-child {
+	color: #ffffff;
+}
+
+.progress .ant-progress-inner .ant-progress-text {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+}
