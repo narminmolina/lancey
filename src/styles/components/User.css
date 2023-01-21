@@ -1,0 +1,40 @@
+.user-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 25px;
+	width: 100%;
+	padding: 0 8px;
+	padding-top: 25px;
+	border-top: 1px solid #475467;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+.user-container a {
+	max-width: 115px;
+	margin: 0px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.user-container a em {
+	color: #f2f4f7;
+	font-weight: 400;
+}
+
+.user-container button {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
