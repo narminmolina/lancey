@@ -1,0 +1,146 @@
+.home-page-main {
+	width: 80%;
+	margin-top: 12px;
+	padding: 32px;
+	background-color: #ffffff;
+	border-radius: 40px 0px 0px 0px;
+	color: #101828;
+}
+
+.home-page-main header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-content h1 {
+	margin: 0px 0px 5px 0px;
+	color: var(--main);
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 38px;
+}
+.header-content p {
+	margin: 0px;
+	color: #667085;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.button-wrapper {
+	display: flex;
+	gap: 12px;
+}
+
+.button-wrapper button {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 16px;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+/* Button customization  */
+
+.ant-btn-default {
+	color: var(--gray);
+}
+
+.ant-btn-default:not(:disabled):hover {
+	background-color: #e4e4e4;
+	border-color: #e4e4e4;
+	color: var(--gray);
+}
+
+.ant-btn-primary {
+	background: var(--purple);
+	color: #ffffff;
+}
+
+.ant-btn-primary:not(:disabled):hover {
+	background-color: #5e35b5;
+}
+
+/* Dashboard statistics */
+.statistics-wrapper {
+	display: flex;
+	gap: 24px;
+	max-width: 1120px;
+	margin: 32px 0 34px 0;
+}
+
+.statistic-box {
+	max-width: 348px;
+	padding: 24px;
+	border: 1px solid #eaecf0;
+	border-radius: 8px;
+	box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+.statistic-title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+	color: #101828;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.dots-button {
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	background-color: transparent;
+	border: none;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.dots-button:hover {
+	transform: scale(1.25);
+}
+
+.statistic-info {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.statistic-info p strong {
+	display: inline-block;
+	margin-bottom: 16px;
+	color: var(--main);
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 44px;
+	letter-spacing: -0.32px;
+}
+
+.statistic-info p em {
+	min-width: 158px;
+	color: #667085;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.incline,
+.decline,
+.statistic-info p em {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.incline {
+	color: #027a48;
+}
+
+.decline {
+	color: #b42318;
+}

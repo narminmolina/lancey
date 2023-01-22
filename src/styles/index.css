@@ -2,7 +2,7 @@
 
 :root {
 	--main: #101828;
-	--gary: #344054;
+	--gray: #344054;
 	--purple: #7f56d9;
 
 	font-family: 'Inter', sans-serif;
@@ -45,4 +45,14 @@ body {
 .home-page {
 	display: flex;
 	padding: 0px;
+}
+
+.search-input {
+	display: flex;
+	align-items: center;
+}
+
+.search-input .ant-input-prefix {
+	height: 20px;
+	margin-inline-end: 8px;
 }

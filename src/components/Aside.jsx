@@ -1,9 +1,9 @@
 import { Input } from 'antd';
 
 import { User } from 'components/User';
-import { Logo } from 'components/Logo';
 import { SpaceAlert } from 'components/SpaceAlert';
 
+import { Logo } from 'assets/svg/Logo';
 import { SearchIcon } from 'assets/svg/SearchIcon';
 
 import { navItems } from '../constants';
@@ -16,7 +16,13 @@ export const Aside = () => {
 			<a href="/" title="Link to home page">
 				<Logo />
 			</a>
-			<Input className="search-input" size="large" placeholder="Search" prefix={<SearchIcon />} />
+			<Input
+				className="search-input"
+				type="search"
+				size="large"
+				placeholder="Search"
+				prefix={<SearchIcon />}
+			/>
 			<nav>
 				<ul className="nav-list">
 					{navItems.map(({ title, link, icon }, index) => (
