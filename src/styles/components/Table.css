@@ -1,0 +1,297 @@
+.table-filters {
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+}
+
+.filter-badge {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 40px;
+	padding: 10px 16px;
+	background-color: #f9f5ff;
+	border: 1px solid #f9f5ff;
+	border-radius: 8px;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	color: #6941c6;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	margin-right: 12px;
+}
+
+.filter-badge button {
+	display: flex;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.table-filters .filters-button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.table-filters .search-input {
+	width: 320px;
+	height: 44px;
+	margin-left: auto;
+}
+
+section.table .ant-table-wrapper {
+	border: 1px solid #eaecf0;
+	box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+	border-radius: 8px;
+}
+
+section.table .ant-table-thead {
+	height: 44px;
+}
+
+section.table .ant-table-thead .ant-table-cell,
+section.table .ant-table-thead .ant-table-cell:hover {
+	background-color: white;
+}
+
+section.table .ant-table-thead .ant-table-cell,
+section.table .ant-table-thead .ant-table-cell .ant-table-column-title {
+	color: #667085;
+	font-weight: 500;
+}
+
+section.table .ant-table-thead .ant-table-cell::before {
+	display: none;
+}
+
+section.table .ant-table-column-sorters {
+	display: inline-flex;
+}
+
+section.table .ant-table-column-sorters .ant-table-column-sorter {
+	margin-inline-start: 8px;
+	display: none;
+}
+
+section.table .ant-table-tbody tr:nth-child(odd) {
+	background-color: #f9fafb;
+}
+
+.company-column-title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.company-column-title svg {
+	transition: all 0.3s ease;
+}
+
+.company-column-title svg.up {
+	transform: rotate(180deg);
+}
+
+.company-cell {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	vertical-align: unset;
+}
+
+.company-cell img {
+	width: 40px;
+	height: auto;
+	object-fit: cover;
+	vertical-align: unset;
+}
+
+.company-cell p {
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+	font-size: 14px;
+	color: #101828;
+	line-height: 20px;
+}
+
+.company-cell p span {
+	color: #667085;
+	font-weight: 400;
+}
+
+.about {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--main);
+}
+.about em {
+	color: #667085;
+}
+
+.greenStatus,
+.greyStatus {
+	padding: 2px 8px;
+	border-radius: 16px;
+	max-width: 80px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
+.greenStatus {
+	background: #ecfdf3;
+	color: #027a48;
+}
+.greyStatus {
+	background: #f2f4f7;
+	color: #344054;
+}
+
+section.table .ant-table-selection-column {
+	padding-left: 24px !important
+  ;
+}
+
+/* Checkbox */
+
+section.table .ant-checkbox-inner {
+	width: 20px;
+	height: 20px;
+	border-radius: 6px;
+	border: 1px solid #d0d5dd;
+}
+section.table .ant-checkbox:hover .ant-checkbox-inner {
+	border-color: var(--purple);
+	background-color: #f9f5ff;
+}
+
+section.table .ant-checkbox-inner:hover .ant-checkbox-inner {
+	border-color: var(--purple);
+}
+
+section.table .ant-checkbox-checked .ant-checkbox-inner {
+	background-color: #f9f5ff;
+	border: 1px solid var(--purple);
+}
+.ant-table-row {
+}
+
+section.table .ant-checkbox-checked .ant-checkbox-inner::after {
+	border-color: var(--purple);
+	border: 0;
+	width: 14px;
+	height: 14px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.667 3.5 5.25 9.917 2.333 7' stroke='%237F56D9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.ant-checkbox-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+	border-color: var(--purple);
+	border: 0;
+	width: 14px;
+	height: 14px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f9f5ff;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none'%3E%3Cpath stroke='%237F56D9' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2.917 7h8.166'/%3E%3C/svg%3E");
+}
+
+.ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+	background-color: #f9f5ff;
+	border: 1px solid var(--purple);
+}
+
+/* Pagination */
+section.table .ant-pagination {
+	padding: 16px 24px !important;
+	gap: 12px !important;
+	margin: 0 !important;
+}
+
+section.table .ant-pagination-prev,
+section.table .ant-pagination-next {
+	height: unset !important;
+}
+
+section.table .ant-pagination-prev button::before,
+section.table .ant-pagination-next button::before {
+	display: inline-flex;
+	padding: 8px 14px;
+	height: 36px;
+	background: #ffffff;
+	border: 1px solid #d0d5dd;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #344054;
+}
+
+section.table [title='Previous Page'] button::before {
+	content: 'Previous';
+}
+
+section.table [title='Next Page'] button::before {
+	content: 'Next';
+}
+
+section.table [title='Previous Page'] button svg,
+section.table [title='Next Page'] button svg,
+section.table .ant-pagination-item {
+	display: none;
+}
+
+/* Dropdown */
+
+.filet-dropdown-wrapper {
+	position: relative;
+}
+.dropdown-filter {
+	position: absolute;
+	width: 150px;
+	z-index: 80;
+	background-color: #ffffff;
+	margin-top: 5px;
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+	border-radius: 5px;
+}
+
+.input-wrapper {
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.customer-input label,
+.churned-input label {
+	display: flex;
+	gap: 8px;
+	padding: 10px 15px 10px 15px;
+	color: #344054;
+	cursor: pointer;
+}
+
+.dropdown-filter .customer-input:hover,
+.churned-input:hover {
+	background-color: #f9f5ff;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.customer-input input[type='checkbox'],
+.churned-input input[type='checkbox'] {
+	cursor: pointer;
+	opacity: 0.2;
+}

@@ -1,6 +1,15 @@
+import catalog from 'assets/logos/catalog.webp';
+import circooles from 'assets/logos/circooles.webp';
+import commandR from 'assets/logos/commandR.webp';
+import hourglass from 'assets/logos/hourglass.webp';
+import layers from 'assets/logos/layers.webp';
+import quotient from 'assets/logos/quotient.webp';
+import sisyphus from 'assets/logos/sisyphus.webp';
+
 export const navItems = [
 	{
 		title: 'Home',
+		src: '',
 		link: '/',
 		icon: (
 			<svg width={24} height={25} fill="none">
@@ -16,6 +25,7 @@ export const navItems = [
 	},
 	{
 		title: 'Dashboard',
+		src: '',
 		link: '/dashboard',
 		icon: (
 			<svg width={24} height={25} fill="none">
@@ -117,5 +127,169 @@ export const dashboardStatistics = [
 		value: 2420,
 		isIncreased: true,
 		percentage: '40%',
+	},
+	{
+		title: 'Members',
+		value: 1210,
+		isIncreased: false,
+		percentage: '10%',
+	},
+	{
+		title: 'Active now',
+		value: 316,
+		isIncreased: true,
+		percentage: '20%',
+	},
+];
+
+export const companies = [
+	{
+		company: {
+			title: 'Catalog',
+			url: 'catalog.io',
+			src: catalog,
+		},
+		usage: '80',
+		status: 'Customer',
+		product: {
+			title: 'Content curating app',
+			about: 'Brings all your news into one place',
+		},
+		key: '0f8fad5b-d9cb-469f-a165-70867728950e',
+	},
+	{
+		company: {
+			title: 'Circooles',
+			src: circooles,
+			url: 'getcircooles.com',
+		},
+		usage: '70',
+		status: 'Churned',
+		product: {
+			title: 'Design Software',
+			about: 'Super lightweight design app',
+		},
+		key: '1e8e1d7a-2e55-4f3d-9f89-3b1b1b6b6327',
+	},
+	{
+		company: {
+			title: 'Command+R',
+			src: commandR,
+			url: 'cmdr.ai',
+		},
+		usage: '30',
+		status: 'Customer',
+		product: {
+			title: 'Data prediction',
+			about: 'AI and machine learning data',
+		},
+		key: '2d7d0c99-3c44-5e22-8e78-4a0a0a5a5236',
+	},
+	{
+		company: {
+			title: 'Hourglass',
+			src: hourglass,
+			url: 'hourglass.app',
+		},
+		usage: '85',
+		status: 'Customer',
+		product: {
+			title: 'Productivity app',
+			about: 'Time management and productivity app',
+		},
+		key: '3c6c1bb8-4b33-6f11-7d67-59f9f9494245',
+	},
+	{
+		company: {
+			title: 'Layers',
+			src: layers,
+			url: 'getlayers.io',
+		},
+		usage: '40',
+		status: 'Churned',
+		product: { title: 'Web app integrations', about: 'Connect web apps seamlessly' },
+		key: '4b5b2ad7-5a22-7e00-6c56-68e8e83a3154',
+	},
+	{
+		company: {
+			title: 'Quotient',
+			src: quotient,
+			url: 'quotient.co',
+		},
+
+		usage: '20',
+		status: 'Customer',
+		product: {
+			title: 'Sales CRM',
+			about: 'Web-based sales doc management',
+		},
+		key: '5a4a39f6-6911-8f11-5b45-77d7d7292b63',
+	},
+	{
+		company: {
+			title: 'Sisyphus',
+			src: sisyphus,
+			url: 'sisyphus.com',
+		},
+		usage: '50',
+		status: 'Customer',
+		product: { title: 'Automation and workflow', about: 'Time tracking, invoicing and expenses' },
+		key: '693a48d5-7800-9e00-4a34-86c6c6182a72',
+	},
+	{
+		company: {
+			title: 'News Hub',
+			src: catalog,
+			url: 'newshub.io',
+		},
+		usage: '15',
+		status: 'Churned',
+		product: {
+			title: 'News aggregation platform',
+			about: 'Easily discover and read the latest news',
+		},
+		key: '782a57b4-86ef-adff-3923-95b5b5071a81',
+	},
+	{
+		company: {
+			title: 'Content Central',
+			src: circooles,
+			url: 'contentcentral.com',
+		},
+		usage: '65',
+		status: 'Customer',
+		product: {
+			title: 'Content management system',
+			about: 'Streamline your content creation process',
+		},
+		key: 'a5ea8451-b3bc-decd-05f0-c2c2c1e3e7ee',
+	},
+	{
+		company: {
+			title: 'My News',
+			src: commandR,
+			url: 'mynews.app',
+		},
+		usage: '10',
+		status: 'Churned',
+		product: {
+			title: 'Personalized news feed app',
+			about: 'Get the news that matters most to you',
+		},
+		key: '871a6693-95de-bcee-2812-a4a4a3f60910',
+	},
+	{
+		company: {
+			title: 'Times News',
+			src: hourglass,
+			url: 'timesnews.app',
+		},
+		usage: '50',
+		status: 'Customer',
+		product: {
+			title: 'Personalized news feed app',
+			about: 'Get the news that matters most to you',
+		},
+		key: '96fa7572-a4cd-cddd-1701-b3b3b2f4f8ff',
 	},
 ];
